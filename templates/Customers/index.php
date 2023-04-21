@@ -31,6 +31,7 @@
                         success: function (data) {
                             if (data.response == 'OK') {
                                 console.log("Success:" + data.message);
+                                location.reload();
                             } else {
                                 console.log("Failed" + data.message);
                             }

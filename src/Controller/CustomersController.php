@@ -28,6 +28,7 @@ class CustomersController extends AppController
         ]);
 
         $this->set(compact('customers'));
+
     }
 
     public function update($data)
