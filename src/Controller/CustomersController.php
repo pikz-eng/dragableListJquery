@@ -15,7 +15,7 @@ class CustomersController extends AppController
             $data = explode(",", $this->request->getData("customer"));
 
             if ($this->update($data)) {
-                $response = ["response" => "OK", 'message' => 'Success'];
+                $response = ["response" => "OK", 'message' => 'The customer has been updated'];
             } else {
                 $response = ["response" => "error", 'message' => 'Error message'];
             }
@@ -28,7 +28,6 @@ class CustomersController extends AppController
         ]);
 
         $this->set(compact('customers'));
-
     }
 
     public function update($data)

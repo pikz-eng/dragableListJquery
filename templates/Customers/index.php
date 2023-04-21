@@ -31,7 +31,10 @@
                         success: function (data) {
                             if (data.response == 'OK') {
                                 console.log("Success:" + data.message);
-                                location.reload();
+                                setTimeout(function (){
+                                    location.reload();
+                                },5000);
+
                             } else {
                                 console.log("Failed" + data.message);
                             }
